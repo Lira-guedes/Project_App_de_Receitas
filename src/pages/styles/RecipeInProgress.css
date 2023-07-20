@@ -1,3 +1,121 @@
+.recipeInProgress-container {
+  width: 362.012px;
+}
+
 .ingredient-checked {
   text-decoration: line-through solid black;
+}
+
+.header-inProgress-container {
+  display: flex;
+  flex-direction: column;
+  height: 162px;
+}
+
+.header-inProgress-container h2 {
+  color: white;
+  font-family: Epilogue , sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 2.1px;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: -120px;
+}
+
+.header-inProgress-container img {
+  flex-shrink: 0;
+  height: 160.854px;
+  width: 362.012px;
+}
+
+.inProgress-links-container {
+  display: flex;
+  height: 33px;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  top: -165px;
+  width: 100%;
+}
+
+.inProgress-links-container a {
+  text-decoration: none;
+}
+
+.shareAndLike-container {
+  display: flex;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.shareAndLike-container input {
+  height: 22px;
+}
+
+.category-item-circle-inprogress-container {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.category-item-circle-inprogress-container p {
+  align-content: center;
+  color: #fcc436;
+  display: flex;
+  font-family: Epilogue , sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: normal;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Epilogue , sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+.category-item-circle-inprogress {
+  align-items: center;
+  background-color: transparent;
+  border: 0.06cm solid #fcc436;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  width: 45px;
+}
+
+
+.ingredients-container {
+  border: 0.518px solid #b1b1b1;
+  border-radius: 5px;
+  margin: 0 12px;
+}
+
+.ingredients-container li {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 10px 0;
+  padding-left: 13px;
+}
+
+.instructions-container {
+  border: 0.518px solid #b1b1b1;
+  border-radius: 5px;
+  line-height: 1.5em;
+  margin: 0 12px;
+  margin-bottom: 30px;
+  padding: 12px;
 }

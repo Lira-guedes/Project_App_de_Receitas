@@ -41,7 +41,7 @@ function SearchBar() {
       setRecipes(fillRecipes);
       if (fillRecipes.length === 1) {
         history.push(`${pathname}/${fillRecipes[0][idPath]}`);
-      } else {
+      } else if (fillRecipes.length === 0) {
         global.alert(alertText);
       }
       break;
@@ -51,7 +51,7 @@ function SearchBar() {
       setRecipes(fillRecipes);
       if (fillRecipes.length === 1) {
         history.push(`${pathname}/${fillRecipes[0][idPath]}`);
-      } else {
+      } else if (fillRecipes.length === 0) {
         global.alert(alertText);
       }
       break;
@@ -61,7 +61,7 @@ function SearchBar() {
       setRecipes(fillRecipes);
       if (fillRecipes.length === 1) {
         history.push(`${pathname}/${fillRecipes[0][idPath]}`);
-      } else {
+      } else if (fillRecipes.length === 0) {
         global.alert(alertText);
       }
       break;
