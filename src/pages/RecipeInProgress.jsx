@@ -189,17 +189,18 @@ function RecipeInProgress() {
             {shareMessage && <p>{shareMessage}</p>}
           </div>
         </div>
-        <h1 data-testid="recipe-title">{recipe.strMeal || recipe.strDrink}</h1>
+        <h2 data-testid="recipe-title">{recipe.strMeal || recipe.strDrink}</h2>
       </div>
 
-      <h2 data-testid="recipe-category">{recipe.strCategory}</h2>
+      {/* <h2 data-testid="recipe-category">{recipe.strCategory}</h2> */}
       {recipe.strAlcoholic && (
         <h2 data-testid="recipe-category">{recipe.strAlcoholic}</h2>
       )}
 
-      <h3>Ingredients</h3>
-      <ul>
-        {ingredients
+      <h1 className="ingredients-title">Ingredients</h1>
+      <div className="ingredients-container">
+        <ul>
+          {ingredients
           && ingredients.map((ingredient, index) => (
             <li key={ index }>
               <label
@@ -220,18 +221,25 @@ function RecipeInProgress() {
               </label>
             </li>
           ))}
-      </ul>
-
-      <h3>Instructions</h3>
-      <p data-testid="instructions">{recipe.strInstructions}</p>
+        </ul>
+      </div>
+      <div>
+        <h1 className="instructions-title">Instructions</h1>
+        <div />
+        <p data-testid="instructions" className="instructions-container">{recipe.strInstructions}</p>
+        <div />
+      </div>
+      <div className="start-recipe-btn-container" />
       <button
         type="button"
+        className="btnStart"
         data-testid="finish-recipe-btn"
         disabled={ isDisableFinish }
         onClick={ () => saveDoneRecipe(recipe) }
       >
         Finish Recipe
       </button>
+      <div />
     </div>
   );
 }
